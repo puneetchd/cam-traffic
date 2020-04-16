@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD36BEA923C5069B00C367F8 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD36BEA823C5069B00C367F8 /* CustomAnnotationView.swift */; };
+		DD626F5723C4A4BE00B18DA4 /* GlobalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD626F5623C4A4BE00B18DA4 /* GlobalExtensions.swift */; };
+		DD626F5923C4AFD100B18DA4 /* TrafficAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD626F5823C4AFD100B18DA4 /* TrafficAPIProtocol.swift */; };
+		DD6B227023C51AFB00561DE5 /* CameraSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B226F23C51AFB00561DE5 /* CameraSnapViewController.swift */; };
+		DD6B227223C523E100561DE5 /* GlobalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B227123C523E100561DE5 /* GlobalUtils.swift */; };
+		DD93FF6D23C526D0005C99C1 /* TrafficDataModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93FF6C23C526D0005C99C1 /* TrafficDataModelTest.swift */; };
+		DD93FF6F23C526E8005C99C1 /* TrafficMapViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93FF6E23C526E8005C99C1 /* TrafficMapViewModelTest.swift */; };
+		DD93FF7023C52712005C99C1 /* DataTraffic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABF623C3359800D16ED0 /* DataTraffic.swift */; };
+		DD93FF7123C5299B005C99C1 /* TrafficMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABF423C3347C00D16ED0 /* TrafficMapViewModel.swift */; };
+		DD93FF7223C529A0005C99C1 /* GlobalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD626F5623C4A4BE00B18DA4 /* GlobalExtensions.swift */; };
+		DD93FF7323C529A4005C99C1 /* BaseNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABEE23C3321D00D16ED0 /* BaseNetworkAPI.swift */; };
+		DD93FF7423C529A4005C99C1 /* BaseTrafficAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABF023C3323200D16ED0 /* BaseTrafficAPIHandler.swift */; };
+		DD93FF7523C529A4005C99C1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABF223C3324100D16ED0 /* NetworkError.swift */; };
+		DD93FF7623C529A8005C99C1 /* TrafficAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD626F5823C4AFD100B18DA4 /* TrafficAPIProtocol.swift */; };
+		DD93FF7723C529B0005C99C1 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD36BEA823C5069B00C367F8 /* CustomAnnotationView.swift */; };
+		DD93FF7A23C52C6F005C99C1 /* MockTrafficAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93FF7923C52C6F005C99C1 /* MockTrafficAPIHandler.swift */; };
+		DD93FF7B23C52C6F005C99C1 /* MockTrafficAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93FF7923C52C6F005C99C1 /* MockTrafficAPIHandler.swift */; };
+		DD93FF7D23C52C94005C99C1 /* MockTrafficDataResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = DD93FF7C23C52C94005C99C1 /* MockTrafficDataResponse.json */; };
+		DD93FF7E23C52C94005C99C1 /* MockTrafficDataResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = DD93FF7C23C52C94005C99C1 /* MockTrafficDataResponse.json */; };
+		DD93FF8023C53283005C99C1 /* NetworkHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93FF7F23C53283005C99C1 /* NetworkHandlerTests.swift */; };
+		DD9AABC523C3166C00D16ED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABC423C3166C00D16ED0 /* AppDelegate.swift */; };
+		DD9AABCC23C3166C00D16ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9AABCA23C3166C00D16ED0 /* Main.storyboard */; };
+		DD9AABCE23C3167400D16ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9AABCD23C3167400D16ED0 /* Assets.xcassets */; };
+		DD9AABD123C3167400D16ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9AABCF23C3167400D16ED0 /* LaunchScreen.storyboard */; };
+		DD9AABED23C327B500D16ED0 /* CameraMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABEA23C327B500D16ED0 /* CameraMapViewController.swift */; };
+		DD9AABEF23C3321D00D16ED0 /* BaseNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABEE23C3321D00D16ED0 /* BaseNetworkAPI.swift */; };
+		DD9AABF123C3323200D16ED0 /* BaseTrafficAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABF023C3323200D16ED0 /* BaseTrafficAPIHandler.swift */; };
+		DD9AABF323C3324100D16ED0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABF223C3324100D16ED0 /* NetworkError.swift */; };
+		DD9AABF523C3347C00D16ED0 /* TrafficMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABF423C3347C00D16ED0 /* TrafficMapViewModel.swift */; };
+		DD9AABF723C3359800D16ED0 /* DataTraffic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AABF623C3359800D16ED0 /* DataTraffic.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9AABD823C3167400D16ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9AABB923C3166C00D16ED0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9AABC023C3166C00D16ED0;
+			remoteInfo = "ZühlkeAssignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD36BEA823C5069B00C367F8 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		DD626F5623C4A4BE00B18DA4 /* GlobalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalExtensions.swift; sourceTree = "<group>"; };
+		DD626F5823C4AFD100B18DA4 /* TrafficAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficAPIProtocol.swift; sourceTree = "<group>"; };
+		DD6B226F23C51AFB00561DE5 /* CameraSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSnapViewController.swift; sourceTree = "<group>"; };
+		DD6B227123C523E100561DE5 /* GlobalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalUtils.swift; sourceTree = "<group>"; };
+		DD93FF6C23C526D0005C99C1 /* TrafficDataModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficDataModelTest.swift; sourceTree = "<group>"; };
+		DD93FF6E23C526E8005C99C1 /* TrafficMapViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficMapViewModelTest.swift; sourceTree = "<group>"; };
+		DD93FF7923C52C6F005C99C1 /* MockTrafficAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrafficAPIHandler.swift; sourceTree = "<group>"; };
+		DD93FF7C23C52C94005C99C1 /* MockTrafficDataResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockTrafficDataResponse.json; sourceTree = "<group>"; };
+		DD93FF7F23C53283005C99C1 /* NetworkHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandlerTests.swift; sourceTree = "<group>"; };
+		DD9AABC123C3166C00D16ED0 /* CamTraffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamTraffic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9AABC423C3166C00D16ED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD9AABCB23C3166C00D16ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD9AABCD23C3167400D16ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD9AABD023C3167400D16ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD9AABD223C3167400D16ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9AABD723C3167400D16ED0 /* CamTrafficTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamTrafficTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9AABDD23C3167400D16ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9AABEA23C327B500D16ED0 /* CameraMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMapViewController.swift; sourceTree = "<group>"; };
+		DD9AABEE23C3321D00D16ED0 /* BaseNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkAPI.swift; sourceTree = "<group>"; };
+		DD9AABF023C3323200D16ED0 /* BaseTrafficAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTrafficAPIHandler.swift; sourceTree = "<group>"; };
+		DD9AABF223C3324100D16ED0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DD9AABF423C3347C00D16ED0 /* TrafficMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficMapViewModel.swift; sourceTree = "<group>"; };
+		DD9AABF623C3359800D16ED0 /* DataTraffic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTraffic.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9AABBE23C3166C00D16ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9AABD423C3167400D16ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD36BEA723C5067400C367F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD36BEA823C5069B00C367F8 /* CustomAnnotationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD93FF7823C52C56005C99C1 /* MockHandler */ = {
+			isa = PBXGroup;
+			children = (
+				DD93FF7923C52C6F005C99C1 /* MockTrafficAPIHandler.swift */,
+				DD93FF7C23C52C94005C99C1 /* MockTrafficDataResponse.json */,
+			);
+			path = MockHandler;
+			sourceTree = "<group>";
+		};
+		DD9AABB823C3166C00D16ED0 = {
+			isa = PBXGroup;
+			children = (
+				DD9AABC323C3166C00D16ED0 /* CamTraffic */,
+				DD9AABDA23C3167400D16ED0 /* CamTrafficTests */,
+				DD9AABC223C3166C00D16ED0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9AABC223C3166C00D16ED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9AABC123C3166C00D16ED0 /* CamTraffic.app */,
+				DD9AABD723C3167400D16ED0 /* CamTrafficTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9AABC323C3166C00D16ED0 /* CamTraffic */ = {
+			isa = PBXGroup;
+			children = (
+				DD9AABC423C3166C00D16ED0 /* AppDelegate.swift */,
+				DD9AABCA23C3166C00D16ED0 /* Main.storyboard */,
+				DD9AABCD23C3167400D16ED0 /* Assets.xcassets */,
+				DD9AABCF23C3167400D16ED0 /* LaunchScreen.storyboard */,
+				DD36BEA723C5067400C367F8 /* Views */,
+				DD9AABE923C327B500D16ED0 /* Controllers */,
+				DD9AABE623C327B500D16ED0 /* Extensions */,
+				DD9AABEB23C327B500D16ED0 /* Models */,
+				DD9AABEC23C327B500D16ED0 /* Networking */,
+				DD9AABE823C327B500D16ED0 /* Protocol */,
+				DD9AABE723C327B500D16ED0 /* Utils */,
+				DD93FF7823C52C56005C99C1 /* MockHandler */,
+				DD9AABD223C3167400D16ED0 /* Info.plist */,
+			);
+			path = CamTraffic;
+			sourceTree = "<group>";
+		};
+		DD9AABDA23C3167400D16ED0 /* CamTrafficTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD93FF6C23C526D0005C99C1 /* TrafficDataModelTest.swift */,
+				DD93FF6E23C526E8005C99C1 /* TrafficMapViewModelTest.swift */,
+				DD93FF7F23C53283005C99C1 /* NetworkHandlerTests.swift */,
+				DD9AABDD23C3167400D16ED0 /* Info.plist */,
+			);
+			path = CamTrafficTests;
+			sourceTree = "<group>";
+		};
+		DD9AABE623C327B500D16ED0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD626F5623C4A4BE00B18DA4 /* GlobalExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DD9AABE723C327B500D16ED0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD6B227123C523E100561DE5 /* GlobalUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD9AABE823C327B500D16ED0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DD626F5823C4AFD100B18DA4 /* TrafficAPIProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		DD9AABE923C327B500D16ED0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD9AABEA23C327B500D16ED0 /* CameraMapViewController.swift */,
+				DD6B226F23C51AFB00561DE5 /* CameraSnapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD9AABEB23C327B500D16ED0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD9AABF423C3347C00D16ED0 /* TrafficMapViewModel.swift */,
+				DD9AABF623C3359800D16ED0 /* DataTraffic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD9AABEC23C327B500D16ED0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DD9AABEE23C3321D00D16ED0 /* BaseNetworkAPI.swift */,
+				DD9AABF023C3323200D16ED0 /* BaseTrafficAPIHandler.swift */,
+				DD9AABF223C3324100D16ED0 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9AABC023C3166C00D16ED0 /* CamTraffic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9AABE023C3167400D16ED0 /* Build configuration list for PBXNativeTarget "CamTraffic" */;
+			buildPhases = (
+				DD9AABBD23C3166C00D16ED0 /* Sources */,
+				DD9AABBE23C3166C00D16ED0 /* Frameworks */,
+				DD9AABBF23C3166C00D16ED0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CamTraffic;
+			productName = "ZühlkeAssignment";
+			productReference = DD9AABC123C3166C00D16ED0 /* CamTraffic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD9AABD623C3167400D16ED0 /* CamTrafficTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9AABE323C3167400D16ED0 /* Build configuration list for PBXNativeTarget "CamTrafficTests" */;
+			buildPhases = (
+				DD9AABD323C3167400D16ED0 /* Sources */,
+				DD9AABD423C3167400D16ED0 /* Frameworks */,
+				DD9AABD523C3167400D16ED0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9AABD923C3167400D16ED0 /* PBXTargetDependency */,
+			);
+			name = CamTrafficTests;
+			productName = "ZühlkeAssignmentTests";
+			productReference = DD9AABD723C3167400D16ED0 /* CamTrafficTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9AABB923C3166C00D16ED0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Puneet Sharma";
+				TargetAttributes = {
+					DD9AABC023C3166C00D16ED0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					DD9AABD623C3167400D16ED0 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = DD9AABC023C3166C00D16ED0;
+					};
+				};
+			};
+			buildConfigurationList = DD9AABBC23C3166C00D16ED0 /* Build configuration list for PBXProject "CamTraffic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD9AABB823C3166C00D16ED0;
+			productRefGroup = DD9AABC223C3166C00D16ED0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9AABC023C3166C00D16ED0 /* CamTraffic */,
+				DD9AABD623C3167400D16ED0 /* CamTrafficTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9AABBF23C3166C00D16ED0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9AABD123C3167400D16ED0 /* LaunchScreen.storyboard in Resources */,
+				DD9AABCE23C3167400D16ED0 /* Assets.xcassets in Resources */,
+				DD9AABCC23C3166C00D16ED0 /* Main.storyboard in Resources */,
+				DD93FF7D23C52C94005C99C1 /* MockTrafficDataResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9AABD523C3167400D16ED0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD93FF7E23C52C94005C99C1 /* MockTrafficDataResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9AABBD23C3166C00D16ED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9AABF523C3347C00D16ED0 /* TrafficMapViewModel.swift in Sources */,
+				DD9AABF123C3323200D16ED0 /* BaseTrafficAPIHandler.swift in Sources */,
+				DD626F5923C4AFD100B18DA4 /* TrafficAPIProtocol.swift in Sources */,
+				DD9AABED23C327B500D16ED0 /* CameraMapViewController.swift in Sources */,
+				DD9AABC523C3166C00D16ED0 /* AppDelegate.swift in Sources */,
+				DD93FF7A23C52C6F005C99C1 /* MockTrafficAPIHandler.swift in Sources */,
+				DD9AABF323C3324100D16ED0 /* NetworkError.swift in Sources */,
+				DD36BEA923C5069B00C367F8 /* CustomAnnotationView.swift in Sources */,
+				DD6B227023C51AFB00561DE5 /* CameraSnapViewController.swift in Sources */,
+				DD9AABF723C3359800D16ED0 /* DataTraffic.swift in Sources */,
+				DD626F5723C4A4BE00B18DA4 /* GlobalExtensions.swift in Sources */,
+				DD6B227223C523E100561DE5 /* GlobalUtils.swift in Sources */,
+				DD9AABEF23C3321D00D16ED0 /* BaseNetworkAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9AABD323C3167400D16ED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD93FF7423C529A4005C99C1 /* BaseTrafficAPIHandler.swift in Sources */,
+				DD93FF7223C529A0005C99C1 /* GlobalExtensions.swift in Sources */,
+				DD93FF7623C529A8005C99C1 /* TrafficAPIProtocol.swift in Sources */,
+				DD93FF8023C53283005C99C1 /* NetworkHandlerTests.swift in Sources */,
+				DD93FF7123C5299B005C99C1 /* TrafficMapViewModel.swift in Sources */,
+				DD93FF7723C529B0005C99C1 /* CustomAnnotationView.swift in Sources */,
+				DD93FF7023C52712005C99C1 /* DataTraffic.swift in Sources */,
+				DD93FF6F23C526E8005C99C1 /* TrafficMapViewModelTest.swift in Sources */,
+				DD93FF7523C529A4005C99C1 /* NetworkError.swift in Sources */,
+				DD93FF6D23C526D0005C99C1 /* TrafficDataModelTest.swift in Sources */,
+				DD93FF7323C529A4005C99C1 /* BaseNetworkAPI.swift in Sources */,
+				DD93FF7B23C52C6F005C99C1 /* MockTrafficAPIHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD9AABD923C3167400D16ED0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9AABC023C3166C00D16ED0 /* CamTraffic */;
+			targetProxy = DD9AABD823C3167400D16ED0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD9AABCA23C3166C00D16ED0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9AABCB23C3166C00D16ED0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD9AABCF23C3167400D16ED0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9AABD023C3167400D16ED0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9AABDE23C3167400D16ED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD9AABDF23C3167400D16ED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9AABE123C3167400D16ED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6UW97L5NJ;
+				INFOPLIST_FILE = CamTraffic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.camtraffic;
+				PRODUCT_NAME = CamTraffic;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD9AABE223C3167400D16ED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6UW97L5NJ;
+				INFOPLIST_FILE = CamTraffic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.camtraffic;
+				PRODUCT_NAME = CamTraffic;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DD9AABE423C3167400D16ED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6UW97L5NJ;
+				INFOPLIST_FILE = CamTrafficTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.CamTrafficTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamTraffic.app/CamTraffic";
+			};
+			name = Debug;
+		};
+		DD9AABE523C3167400D16ED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6UW97L5NJ;
+				INFOPLIST_FILE = CamTrafficTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.CamTrafficTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamTraffic.app/CamTraffic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9AABBC23C3166C00D16ED0 /* Build configuration list for PBXProject "CamTraffic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9AABDE23C3167400D16ED0 /* Debug */,
+				DD9AABDF23C3167400D16ED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9AABE023C3167400D16ED0 /* Build configuration list for PBXNativeTarget "CamTraffic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9AABE123C3167400D16ED0 /* Debug */,
+				DD9AABE223C3167400D16ED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9AABE323C3167400D16ED0 /* Build configuration list for PBXNativeTarget "CamTrafficTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9AABE423C3167400D16ED0 /* Debug */,
+				DD9AABE523C3167400D16ED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD9AABB923C3166C00D16ED0 /* Project object */;
+}
