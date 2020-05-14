@@ -61,6 +61,8 @@ class BaseNetworkAPI {
                 return
             }
         }
+        
+        //Set parameters here.
 
         defaultSession.dataTask(with: urlRequest) { (result) in
             switch result {
