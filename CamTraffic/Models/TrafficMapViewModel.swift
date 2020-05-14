@@ -10,16 +10,16 @@ import Foundation
 import MapKit
 
 class TrafficMapViewModel {
-    
+
     private let networkHandler: TrafficAPIProtocol
     var callbackHandler: CallbackHandler?
     var dataTraffic: DataTraffic?
-    
+
     //MARK:- Init Methods
     init(apiHandler: TrafficAPIProtocol) {
         networkHandler = apiHandler
     }
-    
+
     func fetchTrafficCameraData() {
         callbackHandler?(Callback.showLoader)
         networkHandler.getLatestTraffic(forDate: getJSONDateFormatStringForToday()) { [weak self] (trafficModel, networkError) in
@@ -32,19 +32,21 @@ class TrafficMapViewModel {
             self?.callbackHandler?(Callback.hideLoader)
         }
     }
-    
+
     func getAnnotationToDsiplayOnMap() -> [MKPointAnnotation]? {
-        guard let listOfAnnotations = dataTraffic?.rootItem?.first?.camerasList?.map({ (obj) -> MKPointAnnotation in
-            let customAnnotation = CustomAnnotationView()
-            customAnnotation.coordinate = obj.getLocationCoord()
-            customAnnotation.trafficLargeImageURL = obj.imageURL
-            return customAnnotation
-        }) else { return [] }
+        guard
+            let listOfAnnotations = dataTraffic?.rootItem?.first?.camerasList?.map({ (obj) -> MKPointAnnotation in
+                let customAnnotation = CustomAnnotationView()
+                customAnnotation.coordinate = obj.getLocationCoord()
+                customAnnotation.trafficLargeImageURL = obj.imageURL
+                return customAnnotation
+            })
+        else { return [] }
         return listOfAnnotations
     }
-    
+
     func getJSONDateFormatStringForToday() -> String {
-        let dateFormater : DateFormatter = DateFormatter()
+        let dateFormater: DateFormatter = DateFormatter()
         dateFormater.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
         return dateFormater.string(from: Date())
     }

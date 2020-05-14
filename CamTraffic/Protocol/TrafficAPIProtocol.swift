@@ -9,5 +9,5 @@
 import Foundation
 
 protocol TrafficAPIProtocol {
-    func getLatestTraffic(forDate:String, completionHandler: @escaping TrafficDataCompletionHandler)
+    func getLatestTraffic(forDate: String, completionHandler: @escaping TrafficDataCompletionHandler)
 }

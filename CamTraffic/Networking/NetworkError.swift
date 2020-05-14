@@ -16,7 +16,7 @@ enum NetworkError: Error, Equatable {
     case decodeError
     case noInternet
     case genericError(code: Int, message: String)
-    
+
     var localizedDescription: String {
         switch self {
         case .genericError(_, let message):
@@ -35,7 +35,7 @@ enum NetworkError: Error, Equatable {
             return "The Internet connection appears to be offline."
         }
     }
-    
+
     /// Returns any of the `NetworkError` enum value based on the given error code
     /// - Parameters:
     ///    - errorCode: API Response Code
@@ -53,5 +53,3 @@ enum NetworkError: Error, Equatable {
     }
      */
 }
-
-

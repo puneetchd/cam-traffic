@@ -6,8 +6,8 @@
 //  Copyright © 2020 Puneet Sharma. All rights reserved.
 //
 
-import UIKit
 import MapKit
+import UIKit
 
 class CustomAnnotationView: MKPointAnnotation {
     var trafficLargeImageURL: URL?

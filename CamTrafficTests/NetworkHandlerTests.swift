@@ -11,23 +11,24 @@ import XCTest
 class NetworkHandlerTests: XCTestCase {
 
     let networkHandler = BaseNetworkAPI.shared
-    
+
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
+
     func testNetworkRequestCreation() {
-        
+
     }
-    
+
     func testBadURLResponse() {
-        let requestModel: NetworkRequestModel = NetworkRequestModel(requestType: NetworkRequestType.get, url: "\(kBaseUrl)/transport/traffic-images", parameters: ["date_time":"forDate"], headers: nil)
+        let requestModel: NetworkRequestModel = NetworkRequestModel(
+            requestType: NetworkRequestType.get, url: "\(kBaseUrl)/transport/traffic-images", parameters: ["date_time": "forDate"], headers: nil)
         networkHandler.createRequest(networkRequestModel: requestModel) { (data, error) in
             XCTAssertEqual(error, NetworkError.apiError, "API Error should have occured")
         }
     }
 
     override func tearDown() {
-       
+
     }
 }

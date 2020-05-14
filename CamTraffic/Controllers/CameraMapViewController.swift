@@ -6,26 +6,26 @@
 //  Copyright © 2020 Puneet Sharma. All rights reserved.
 //
 
-import UIKit
 import MapKit
+import UIKit
 
 class CameraMapViewController: UIViewController {
-    
+
     @IBOutlet weak var mapView: MKMapView!
-    
+
     private let viewModel: TrafficMapViewModel = TrafficMapViewModel(apiHandler: BaseTrafficAPIHandler())
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
     }
-    
+
     func setUpUI() {
         self.title = "MapView"
         addHandlers()
         viewModel.fetchTrafficCameraData()
     }
-    
+
     private func addHandlers() {
         viewModel.callbackHandler = { [weak self] (callbackType: Callback) in
             if let weakSelf: CameraMapViewController = self {
@@ -44,21 +44,23 @@ class CameraMapViewController: UIViewController {
             }
         }
     }
-    
+
     func updateMapView() {
         mapView.addAnnotations(viewModel.getAnnotationToDsiplayOnMap()!)
     }
 }
 
-extension CameraMapViewController : MKMapViewDelegate {
-    
+extension CameraMapViewController: MKMapViewDelegate {
+
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let cameraSnapVC = self.storyboard?.instantiateViewController(withIdentifier: "CameraSnapVCIdentifier") as! CameraSnapViewController
         cameraSnapVC.modalPresentationStyle = .overCurrentContext
         cameraSnapVC.modalPresentationCapturesStatusBarAppearance = true
         cameraSnapVC.imageURLToLoad = (view.annotation as? CustomAnnotationView)?.trafficLargeImageURL
-        self.navigationController?.present(cameraSnapVC, animated: true, completion: {
-            
-        })
+        self.navigationController?.present(
+            cameraSnapVC, animated: true,
+            completion: {
+
+            })
     }
 }

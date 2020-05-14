@@ -8,16 +8,18 @@
 
 import Foundation
 
-class MockTrafficAPIHandler : TrafficAPIProtocol{
+class MockTrafficAPIHandler: TrafficAPIProtocol {
     func getLatestTraffic(forDate: String, completionHandler: @escaping TrafficDataCompletionHandler) {
         if let path = Bundle.main.path(forResource: "MockTrafficDataResponse", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let decoder: JSONDecoder = JSONDecoder()
-                let models: DataTraffic = try decoder.decode(DataTraffic.self, from:
-                    data)
+                let models: DataTraffic = try decoder.decode(
+                    DataTraffic.self,
+                    from:
+                        data)
                 completionHandler(models, nil)
-            } catch let parsingError{
+            } catch let parsingError {
                 completionHandler(nil, .genericError(code: 11, message: parsingError.localizedDescription))
             }
         }
