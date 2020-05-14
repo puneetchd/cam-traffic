@@ -63,7 +63,6 @@ class BaseNetworkAPI {
         }
         
         //Set parameters here.
-
         defaultSession.dataTask(with: urlRequest) { (result) in
             switch result {
             case .success(let (response, data)):
