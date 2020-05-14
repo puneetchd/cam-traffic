@@ -9,6 +9,7 @@
 import Foundation
 
 class MockTrafficAPIHandler: TrafficAPIProtocol {
+    //Mock Traffic handler.
     func getLatestTraffic(forDate: String, completionHandler: @escaping TrafficDataCompletionHandler) {
         if let path = Bundle.main.path(forResource: "MockTrafficDataResponse", ofType: "json") {
             do {
