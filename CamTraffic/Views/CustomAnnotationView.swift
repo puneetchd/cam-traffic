@@ -10,5 +10,6 @@ import MapKit
 import UIKit
 
 class CustomAnnotationView: MKPointAnnotation {
+    //Image URL
     var trafficLargeImageURL: URL?
 }
