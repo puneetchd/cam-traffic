@@ -35,4 +35,6 @@ enum NetworkError: Error, Equatable {
             return "The Internet connection appears to be offline."
         }
     }
+    
+    //Add New Error code handling. 
 }
