@@ -35,4 +35,21 @@ enum NetworkError: Error, Equatable {
             return "The Internet connection appears to be offline."
         }
     }
+
+    /// Returns any of the `NetworkError` enum value based on the given error code
+    /// - Parameters:
+    ///    - errorCode: API Response Code
+    /// - Returns: Any type of `NetworkError`
+    /*
+    static func getErrorType(fromErrorCode errorCode: Int) -> NetworkError {
+        switch errorCode {
+        case 100..<200: return .unavailable
+        case 200..<300: return .success
+        case 300..<400: return .redirection
+        case 400..<500: return .clientError
+        case 500..<600: return .serverError
+        default: return .unknown
+        }
+    }
+     */
 }
