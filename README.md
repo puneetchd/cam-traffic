@@ -4,4 +4,3 @@ Used MVVM Design pattern.
 Testable code. 
 API Integration. 
 Updated code
-
